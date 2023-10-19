@@ -1,0 +1,501 @@
+\doxysection{gh\+::Big\+Integer Class Reference}
+\hypertarget{classgh_1_1_big_integer}{}\label{classgh_1_1_big_integer}\index{gh::BigInteger@{gh::BigInteger}}
+
+
+A class to represent arbitrary-\/precision integers.  
+
+
+
+
+{\ttfamily \#include $<$Big\+Integer.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgh_1_1_big_integer_a1ca395625f3359df265c2f23c06e1a03}\label{classgh_1_1_big_integer_a1ca395625f3359df265c2f23c06e1a03} 
+{\bfseries Big\+Integer} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer_aeaf955e0f24dcfd5105f867639093dda}{Big\+Integer}} (int num)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes a \doxylink{classgh_1_1_big_integer}{Big\+Integer} with an integer value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer_a08151974339bd401e15cc14b3e7aa75f}{Big\+Integer}} (const char \texorpdfstring{$\ast$}{*}num)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes a \doxylink{classgh_1_1_big_integer}{Big\+Integer} from a character array. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer_a75e4126cb5c065a1d95b5915d1e35ad8}{Big\+Integer}} (const string \&num)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes a \doxylink{classgh_1_1_big_integer}{Big\+Integer} from a string. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer_ac219da19c1fcc160695477d7e776d01f}{Big\+Integer}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Copy constructor for \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer_ae5a83abae1254f488314ad6056edffb0}{Big\+Integer}} (\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&\&rhs)
+\begin{DoxyCompactList}\small\item\em Move constructor for \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classgh_1_1_big_integer_a30a14aa059f2972f32cb95c8d654e5e4}{operator=}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator for \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classgh_1_1_big_integer_a94aeced2b16633c9a1f9a18c628d4bc5}{operator=}} (\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&\&rhs)
+\begin{DoxyCompactList}\small\item\em Move assignment operator for \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \end{DoxyCompactList}\item 
+\Hypertarget{classgh_1_1_big_integer_ab85d652af38ec625296512ba2d2ad815}\label{classgh_1_1_big_integer_ab85d652af38ec625296512ba2d2ad815} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Big\+Integer} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \mbox{\hyperlink{classgh_1_1_big_integer_a39c27f7ba741a050ea9c857e8cf01c49}{operator+}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Addition operator to add two Big\+Integers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classgh_1_1_big_integer_a15dd5f1e8e771d563047333c0f43a989}{operator+=}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em In-\/place addition operator to add another \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \mbox{\hyperlink{classgh_1_1_big_integer_ae40c13210570bb699fc65f5dc1a3fd19}{operator-\/}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Subtraction operator to subtract another \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classgh_1_1_big_integer_a3b5637d78b55cf0a2013deb554853432}{operator-\/=}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em In-\/place subtraction operator to subtract another \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \mbox{\hyperlink{classgh_1_1_big_integer_a9ecf7d2c5579a4e18c30093fde9760bb}{operator\texorpdfstring{$\ast$}{*}}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Multiplication operator to multiply two Big\+Integers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classgh_1_1_big_integer_ae1124a9661d2d5c85d76a1809ade810f}{operator\texorpdfstring{$\ast$}{*}=}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em In-\/place multiplication operator to multiply by another \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \mbox{\hyperlink{classgh_1_1_big_integer_a8407e7346cda26dc603a8c46b9e233fc}{operator\texorpdfstring{$\ast$}{*}}} (const int \&num) const
+\begin{DoxyCompactList}\small\item\em Multiplication operator to multiply by an integer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& \mbox{\hyperlink{classgh_1_1_big_integer_a3bb7c63bd5112a34d122b7dc73100167}{operator\texorpdfstring{$\ast$}{*}=}} (const int \&num)
+\begin{DoxyCompactList}\small\item\em In-\/place multiplication operator to multiply by an integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classgh_1_1_big_integer_a048794a21abb4c510894aa08c6c621b7}{operator==}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Equality operator to check if two Big\+Integers are equal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgh_1_1_big_integer_a25247ca92c988e8a9b0843eabf7553d5}{operator!=}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Inequality operator to check if two Big\+Integers are not equal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgh_1_1_big_integer_a4cc490f76eed137d2df7e142e8443dc6}{operator$<$}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Less than operator to check if one \doxylink{classgh_1_1_big_integer}{Big\+Integer} is less than another. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgh_1_1_big_integer_af603b1a8a035a0c1c23694a9cf5bed43}{operator$<$=}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Less than or equal to operator to check if one \doxylink{classgh_1_1_big_integer}{Big\+Integer} is less than or equal to another. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgh_1_1_big_integer_a4142636c29a331f05f9b783e1b35aa23}{operator$>$}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Greater than operator to check if one \doxylink{classgh_1_1_big_integer}{Big\+Integer} is greater than another. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classgh_1_1_big_integer_a84505cc299a30c11229aa2b18f6dc887}{operator$>$=}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Greater than or equal to operator to check if one \doxylink{classgh_1_1_big_integer}{Big\+Integer} is greater than or equal to another. \end{DoxyCompactList}\item 
+ostream \& \mbox{\hyperlink{classgh_1_1_big_integer_a9c8f2d88e8d50bda1899daac43a9e6e6}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Overloaded output stream operator to print the \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{classgh_1_1_big_integer_acff0378144a2f2f8761b688b12e6cde0}{operator$>$$>$}} (istream \&is, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Overloaded input stream operator to read a \doxylink{classgh_1_1_big_integer}{Big\+Integer} from an input stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to represent arbitrary-\/precision integers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgh_1_1_big_integer_aeaf955e0f24dcfd5105f867639093dda}\label{classgh_1_1_big_integer_aeaf955e0f24dcfd5105f867639093dda} 
+\index{gh::BigInteger@{gh::BigInteger}!BigInteger@{BigInteger}}
+\index{BigInteger@{BigInteger}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{BigInteger()}{BigInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily gh\+::\+Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes a \doxylink{classgh_1_1_big_integer}{Big\+Integer} with an integer value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The integer value to initialize the \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgh_1_1_big_integer_a08151974339bd401e15cc14b3e7aa75f}\label{classgh_1_1_big_integer_a08151974339bd401e15cc14b3e7aa75f} 
+\index{gh::BigInteger@{gh::BigInteger}!BigInteger@{BigInteger}}
+\index{BigInteger@{BigInteger}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{BigInteger()}{BigInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily gh\+::\+Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{num }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes a \doxylink{classgh_1_1_big_integer}{Big\+Integer} from a character array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The character array representing the integer value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgh_1_1_big_integer_a75e4126cb5c065a1d95b5915d1e35ad8}\label{classgh_1_1_big_integer_a75e4126cb5c065a1d95b5915d1e35ad8} 
+\index{gh::BigInteger@{gh::BigInteger}!BigInteger@{BigInteger}}
+\index{BigInteger@{BigInteger}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{BigInteger()}{BigInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily gh\+::\+Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{const string \&}]{num }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes a \doxylink{classgh_1_1_big_integer}{Big\+Integer} from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The string representing the integer value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgh_1_1_big_integer_ac219da19c1fcc160695477d7e776d01f}\label{classgh_1_1_big_integer_ac219da19c1fcc160695477d7e776d01f} 
+\index{gh::BigInteger@{gh::BigInteger}!BigInteger@{BigInteger}}
+\index{BigInteger@{BigInteger}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{BigInteger()}{BigInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily gh\+::\+Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to copy from. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classgh_1_1_big_integer_ae5a83abae1254f488314ad6056edffb0}\label{classgh_1_1_big_integer_ae5a83abae1254f488314ad6056edffb0} 
+\index{gh::BigInteger@{gh::BigInteger}!BigInteger@{BigInteger}}
+\index{BigInteger@{BigInteger}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{BigInteger()}{BigInteger()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily gh\+::\+Big\+Integer\+::\+Big\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&\&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Move constructor for \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to move from. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgh_1_1_big_integer_a9ecf7d2c5579a4e18c30093fde9760bb}\label{classgh_1_1_big_integer_a9ecf7d2c5579a4e18c30093fde9760bb} 
+\index{gh::BigInteger@{gh::BigInteger}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} gh\+::\+Big\+Integer\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Multiplication operator to multiply two Big\+Integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to multiply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the multiplication. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a8407e7346cda26dc603a8c46b9e233fc}\label{classgh_1_1_big_integer_a8407e7346cda26dc603a8c46b9e233fc} 
+\index{gh::BigInteger@{gh::BigInteger}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} gh\+::\+Big\+Integer\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const int \&}]{num }\end{DoxyParamCaption}) const}
+
+
+
+Multiplication operator to multiply by an integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The integer to multiply by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the multiplication. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_ae1124a9661d2d5c85d76a1809ade810f}\label{classgh_1_1_big_integer_ae1124a9661d2d5c85d76a1809ade810f} 
+\index{gh::BigInteger@{gh::BigInteger}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}}
+\index{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& gh\+::\+Big\+Integer\+::operator\texorpdfstring{$\ast$}{*}= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+In-\/place multiplication operator to multiply by another \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to multiply by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the modified \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a3bb7c63bd5112a34d122b7dc73100167}\label{classgh_1_1_big_integer_a3bb7c63bd5112a34d122b7dc73100167} 
+\index{gh::BigInteger@{gh::BigInteger}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}}
+\index{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& gh\+::\+Big\+Integer\+::operator\texorpdfstring{$\ast$}{*}= (\begin{DoxyParamCaption}\item[{const int \&}]{num }\end{DoxyParamCaption})}
+
+
+
+In-\/place multiplication operator to multiply by an integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The integer to multiply by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the modified \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a39c27f7ba741a050ea9c857e8cf01c49}\label{classgh_1_1_big_integer_a39c27f7ba741a050ea9c857e8cf01c49} 
+\index{gh::BigInteger@{gh::BigInteger}!operator+@{operator+}}
+\index{operator+@{operator+}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} gh\+::\+Big\+Integer\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Addition operator to add two Big\+Integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the addition. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a15dd5f1e8e771d563047333c0f43a989}\label{classgh_1_1_big_integer_a15dd5f1e8e771d563047333c0f43a989} 
+\index{gh::BigInteger@{gh::BigInteger}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& gh\+::\+Big\+Integer\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+In-\/place addition operator to add another \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the modified \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_ae40c13210570bb699fc65f5dc1a3fd19}\label{classgh_1_1_big_integer_ae40c13210570bb699fc65f5dc1a3fd19} 
+\index{gh::BigInteger@{gh::BigInteger}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} gh\+::\+Big\+Integer\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Subtraction operator to subtract another \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the subtraction. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a3b5637d78b55cf0a2013deb554853432}\label{classgh_1_1_big_integer_a3b5637d78b55cf0a2013deb554853432} 
+\index{gh::BigInteger@{gh::BigInteger}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& gh\+::\+Big\+Integer\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+In-\/place subtraction operator to subtract another \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the modified \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a94aeced2b16633c9a1f9a18c628d4bc5}\label{classgh_1_1_big_integer_a94aeced2b16633c9a1f9a18c628d4bc5} 
+\index{gh::BigInteger@{gh::BigInteger}!operator=@{operator=}}
+\index{operator=@{operator=}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& gh\+::\+Big\+Integer\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&\&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Move assignment operator for \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to move from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the assigned \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a30a14aa059f2972f32cb95c8d654e5e4}\label{classgh_1_1_big_integer_a30a14aa059f2972f32cb95c8d654e5e4} 
+\index{gh::BigInteger@{gh::BigInteger}!operator=@{operator=}}
+\index{operator=@{operator=}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \& gh\+::\+Big\+Integer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Copy assignment operator for \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the assigned \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classgh_1_1_big_integer_a25247ca92c988e8a9b0843eabf7553d5}\label{classgh_1_1_big_integer_a25247ca92c988e8a9b0843eabf7553d5} 
+\index{gh::BigInteger@{gh::BigInteger}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator"!=}{operator!=}}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Inequality operator to check if two Big\+Integers are not equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they are not equal, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a4cc490f76eed137d2df7e142e8443dc6}\label{classgh_1_1_big_integer_a4cc490f76eed137d2df7e142e8443dc6} 
+\index{gh::BigInteger@{gh::BigInteger}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Less than operator to check if one \doxylink{classgh_1_1_big_integer}{Big\+Integer} is less than another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if lhs is less than rhs, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a9c8f2d88e8d50bda1899daac43a9e6e6}\label{classgh_1_1_big_integer_a9c8f2d88e8d50bda1899daac43a9e6e6} 
+\index{gh::BigInteger@{gh::BigInteger}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloaded output stream operator to print the \doxylink{classgh_1_1_big_integer}{Big\+Integer}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream. \\
+\hline
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_af603b1a8a035a0c1c23694a9cf5bed43}\label{classgh_1_1_big_integer_af603b1a8a035a0c1c23694a9cf5bed43} 
+\index{gh::BigInteger@{gh::BigInteger}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator$<$=}{operator<=}}
+{\footnotesize\ttfamily bool operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Less than or equal to operator to check if one \doxylink{classgh_1_1_big_integer}{Big\+Integer} is less than or equal to another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if lhs is less than or equal to rhs, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a048794a21abb4c510894aa08c6c621b7}\label{classgh_1_1_big_integer_a048794a21abb4c510894aa08c6c621b7} 
+\index{gh::BigInteger@{gh::BigInteger}!operator==@{operator==}}
+\index{operator==@{operator==}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Equality operator to check if two Big\+Integers are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they are equal, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a4142636c29a331f05f9b783e1b35aa23}\label{classgh_1_1_big_integer_a4142636c29a331f05f9b783e1b35aa23} 
+\index{gh::BigInteger@{gh::BigInteger}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator$>$}{operator>}}
+{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Greater than operator to check if one \doxylink{classgh_1_1_big_integer}{Big\+Integer} is greater than another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if lhs is greater than rhs, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_a84505cc299a30c11229aa2b18f6dc887}\label{classgh_1_1_big_integer_a84505cc299a30c11229aa2b18f6dc887} 
+\index{gh::BigInteger@{gh::BigInteger}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator$>$=}{operator>=}}
+{\footnotesize\ttfamily bool operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Greater than or equal to operator to check if one \doxylink{classgh_1_1_big_integer}{Big\+Integer} is greater than or equal to another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if lhs is greater than or equal to rhs, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classgh_1_1_big_integer_acff0378144a2f2f8761b688b12e6cde0}\label{classgh_1_1_big_integer_acff0378144a2f2f8761b688b12e6cde0} 
+\index{gh::BigInteger@{gh::BigInteger}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!gh::BigInteger@{gh::BigInteger}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overloaded input stream operator to read a \doxylink{classgh_1_1_big_integer}{Big\+Integer} from an input stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream. \\
+\hline
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to read into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/programming/sigma/Big\+Integer.\+hpp\end{DoxyCompactItemize}

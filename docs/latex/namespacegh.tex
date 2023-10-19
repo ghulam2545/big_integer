@@ -1,0 +1,159 @@
+\doxysection{gh Namespace Reference}
+\hypertarget{namespacegh}{}\label{namespacegh}\index{gh@{gh}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}}
+\begin{DoxyCompactList}\small\item\em A class to represent arbitrary-\/precision integers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacegh_a7b2f8f439a75fa9623e38f049c189e29}\label{namespacegh_a7b2f8f439a75fa9623e38f049c189e29} 
+enum class \mbox{\hyperlink{namespacegh_a7b2f8f439a75fa9623e38f049c189e29}{Sign}} \{ {\bfseries POSITIVE}
+, {\bfseries NEGATIVE}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration representing the sign of a Big\+Integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacegh_a5e9cab1cf9d1b85bb9cf3d2b904308fa}{operator==}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\item 
+bool \mbox{\hyperlink{namespacegh_ac838b00a98b9d56943f19886d715f7d7}{operator!=}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\item 
+bool \mbox{\hyperlink{namespacegh_a030a8bfeb5cb4e3e6ca2d31c9c5d8809}{operator$<$}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\item 
+bool \mbox{\hyperlink{namespacegh_ab7babf07860a2d85b0ecfea984809b0e}{operator$<$=}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\item 
+bool \mbox{\hyperlink{namespacegh_ad04c619ac1378adba7296a805a486395}{operator$>$}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\item 
+bool \mbox{\hyperlink{namespacegh_a78b2da723701349d4d45110727f8066e}{operator$>$=}} (const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&lhs, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\item 
+ostream \& \mbox{\hyperlink{namespacegh_ae3b35ae744eeb2deac5bc1e34e3bdc8a}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\item 
+\Hypertarget{namespacegh_af32c54a149b49e052525f5887e19fe3b}\label{namespacegh_af32c54a149b49e052525f5887e19fe3b} 
+istream \& {\bfseries operator$>$$>$} (istream \&is, \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&rhs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacegh_a0c92db95df933433ce49f6925c3f0f19}\label{namespacegh_a0c92db95df933433ce49f6925c3f0f19} 
+const auto {\bfseries BASE} = 10
+\begin{DoxyCompactList}\small\item\em The base for the \doxylink{classgh_1_1_big_integer}{Big\+Integer} class, which is 10 (decimal). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The namespace containing the \doxylink{classgh_1_1_big_integer}{Big\+Integer} class and related utilities. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacegh_ac838b00a98b9d56943f19886d715f7d7}\label{namespacegh_ac838b00a98b9d56943f19886d715f7d7} 
+\index{gh@{gh}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!gh@{gh}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool gh\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they are not equal, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{namespacegh_a030a8bfeb5cb4e3e6ca2d31c9c5d8809}\label{namespacegh_a030a8bfeb5cb4e3e6ca2d31c9c5d8809} 
+\index{gh@{gh}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!gh@{gh}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool gh\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if lhs is less than rhs, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{namespacegh_ae3b35ae744eeb2deac5bc1e34e3bdc8a}\label{namespacegh_ae3b35ae744eeb2deac5bc1e34e3bdc8a} 
+\index{gh@{gh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!gh@{gh}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream \& gh\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream. \\
+\hline
+{\em rhs} & The \doxylink{classgh_1_1_big_integer}{Big\+Integer} to output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output stream. 
+\end{DoxyReturn}
+\Hypertarget{namespacegh_ab7babf07860a2d85b0ecfea984809b0e}\label{namespacegh_ab7babf07860a2d85b0ecfea984809b0e} 
+\index{gh@{gh}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!gh@{gh}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool gh\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if lhs is less than or equal to rhs, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{namespacegh_a5e9cab1cf9d1b85bb9cf3d2b904308fa}\label{namespacegh_a5e9cab1cf9d1b85bb9cf3d2b904308fa} 
+\index{gh@{gh}!operator==@{operator==}}
+\index{operator==@{operator==}!gh@{gh}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool gh\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they are equal, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{namespacegh_ad04c619ac1378adba7296a805a486395}\label{namespacegh_ad04c619ac1378adba7296a805a486395} 
+\index{gh@{gh}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!gh@{gh}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool gh\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if lhs is greater than rhs, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{namespacegh_a78b2da723701349d4d45110727f8066e}\label{namespacegh_a78b2da723701349d4d45110727f8066e} 
+\index{gh@{gh}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!gh@{gh}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool gh\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classgh_1_1_big_integer}{Big\+Integer}} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+{\em rhs} & The right-\/hand side \doxylink{classgh_1_1_big_integer}{Big\+Integer}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if lhs is greater than or equal to rhs, false otherwise. 
+\end{DoxyReturn}
