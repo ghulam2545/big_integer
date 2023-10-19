@@ -7,7 +7,7 @@ types provided by C++.
 It encapsulates integer values as a collection of digits and provides methods and operators
 for performing arithmetic operations, comparisons, and I/O operations.
 
-<b>For more look at</b> `docs`. <a>https://ghulam2545.github.io/big_integer/classgh_1_1_big_integer.html</a>
+<b>For more look at</b> `docs` <a href="https://ghulam2545.github.io/big_integer/classgh_1_1_big_integer.html" target="_blank">Docs URL</a>
 
 example:
 
